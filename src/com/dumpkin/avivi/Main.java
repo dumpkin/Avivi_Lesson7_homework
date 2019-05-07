@@ -16,13 +16,16 @@ public class Main {
 
         Employee manager = new Employee();
         Worker worker = new Worker();
-
+int workhour=309;
+int workMonth =10;
         //setinngs attributes for manager
 
         manager.name = "Mykola";
+
         manager.setForHour(60);
-        manager.timeCount(300);
-        System.out.println("менеджер " + manager.name + " заробив " + manager.salary() + " грн.");
+        manager.timeCount(workhour);
+        System.out.println("менеджер " + manager.name + " заробив " + manager.salary() + " грн. за "+workhour+
+                " відпрацьованих годин");
 
 
         System.out.println("________________________________\n");
@@ -32,8 +35,9 @@ public class Main {
 
         worker.name = "Vasiliy";
         worker.setForMonth(7688);
-        worker.setMonthCount(11);
-        System.out.println("Робытник " + worker.name + " заробив " + worker.salary() + " грн.");
+        worker.setMonthCount(workMonth);
+        System.out.println("Робытник " + worker.name + " заробив " + worker.salary() + " грн.за "+workMonth+
+                " відпрацьованих місяців");
 
 
     }
